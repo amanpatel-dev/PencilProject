@@ -1,0 +1,17 @@
+1->Have to add type effect
+2->crousel
+3->stacked card animaton
+4->loading animation
+
+components
+-navbar section will contain the background section and the a middle text 
+with the type effect
+-a button to go to the next page just below the the heading
+-section 2 will contain the stacked cards
+-section 3 will contain inforamation with images
+-section 4 will also contain  the same
+-section 5 will contain the review section
+-section 6 is going to be a crousel
+-section 7 will contain a query 
+-section 8 is going to contain the footer
+finish
