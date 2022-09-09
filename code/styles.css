@@ -431,11 +431,11 @@ transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
 }
 /* ******************************************************** */
 .testimonial-header {
-  background-color: honeydew;
+  background-color: rgb(217, 253, 217);
 }
 .testimonial-section {
   min-height: 75vh;
-  background-color: honeydew;
+  background-color: rgb(217, 253, 217);
 }
 .testimonial {
   margin: 0 15px;
