@@ -6,128 +6,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Pensil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <!-- single Page with Community Logo, Name, Login Button on the header -->
 
+    <div class="head-sec-one">
 
-    <header>
-        <nav>
-            <ul class="navbar-main navbar d-flex">
-                <li class="logo"><img src="a.svg" alt=""></li>
-                <div>
-                    <li class="name"> Pensil Community</li>
+
+        <div class="container ">
+            <header>
+                <nav>
+                    <ul class="navbar-main navbar d-flex">
+                        <li class="logo"><img src="../images/a.svg" alt=""></li>
+                        <div>
+                            <li class="name"> Pensil Community</li>
+                        </div>
+
+                        <div>
+                            <li class="login-but1  btn btn-primary "> Login</li>
+                            <li class="login-but2  btn btn-dark "> Signup</li>
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+
+
+            <!-- Hero Section - Should have a Hero Image, Description Text, CTA button -->
+
+
+            <section class="section-hero pt-5 ">
+
+                <div class=" row justify-content-end ">
+                    <div class="col-sm-12 col-md-5 hero-img">
+                        <img src="../images/3531092.svg" alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-7 hero-text pt-2">
+                        <div class="pt-2">
+                            <span class="hero-text1">One platform for all</span> <br>
+                            <span class="hero-text2 "> Your community needs</span>
+                        </div>
+                        <div class="pt-2 hero-text3">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, reiciendis odit laboriosam
+                                temporibus nemo voluptatum culpa deserunt autem amet ratione id eveniet officiis nobis
+                                maxime!
+                            </p>
+                        </div>
+
+                        <div class="hero-but  btn btn-primary pt-2 ">Get Started</div>
+                    </div>
+
                 </div>
 
-                <div>
-                    <li class="login-but1  btn btn-primary "> Login</li>
-                    <li class="login-but2  btn btn-dark "> Signup</li>
-                </div>
-            </ul>
-        </nav>
-    </header>
-
-
-    <!-- Hero Section - Should have a Hero Image, Description Text, CTA button -->
-
-
-    <section class="section-hero pt-5 ">
-
-        <div class=" row justify-content-end ">
-            <div class="col-sm-5 hero-img">
-                <img src="../images/3531092.svg" alt="">
-            </div>
-            <div class="col-sm-7 hero-text pt-2">
-                <div class="pt-2">
-                    <span class="hero-text1">One platform for all</span> <br>
-                    <span class="hero-text2 "> Your community needs</span>
-                </div>
-                <div class="pt-2 hero-text3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, reiciendis odit laboriosam
-                        temporibus nemo voluptatum culpa deserunt autem amet ratione id eveniet officiis nobis maxime!
-                    </p>
-                </div>
-
-                <div class="hero-but  btn btn-primary pt-2 ">Get Started</div>
-            </div>
-
+            </section>
         </div>
-
-    </section>
-
-
+    </div>
     <!-- Community Description - List items/highlights with brief pointers on what the community is about -->
 
 
-    <section class="section-com-desc p-5 ">
-        <div class="d-flex justify-content-center">
-            <p class="com-desc-header pb-4">Explore Communities</p>
-        </div>
-        <div class="row justify-content-between">
-            <div class="card com-desc-card col-sm-3 p-0">
-                <img src="../images/python.svg" class="card-img-topp-2" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title overflow-hidden">Python Community</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+    <section class="section-com-desc  p-5">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <p class="com-desc-header pb-4">Explore Communities</p>
+            </div>
+            <div class="row justify-content-between">
+                <div class="card com-desc-card col-sm-12 col-md-3 p-0">
+                    <img src="../images/python.svg" class="card-img-topp-2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title overflow-hidden">Python Community</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
 
-                    <div class="d-flex justify-content-between">
-                        <div class="total-member">
-                            <span>Total members</span>
-                            <p>78,990</p>
-                        </div>
-                        <div class="align-self-center">
-                            <a href="#" class="btn btn-primary me-3 ">View</a>
-                            <a href="#" class="btn btn-primary">Join</a>
-                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="total-member">
+                                <span>Total members</span>
+                                <p>78,990</p>
+                            </div>
+                            <div class="align-self-center">
+                                <a href="#" class="btn btn-primary me-3 ">View</a>
+                                <a href="#" class="btn btn-primary">Join</a>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+                <div class="card com-desc-card col-sm-12 col-md-3 p-0">
+                    <img src="../images/java.svg" class="card-img-topp-2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title overflow-hidden">Java Community</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="total-member">
+                                <span>Total members</span>
+                                <p>78,990</p>
+                            </div>
+                            <div class="align-self-center">
+                                <a href="#" class="btn btn-primary me-3 ">View</a>
+                                <a href="#" class="btn btn-primary">Join</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card com-desc-card col-sm-12 col-md-3 p-0">
+                    <img src="../images/linux-svgrepo-com.svg" class="card-img-topp-2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title overflow-hidden">Linux Community</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="total-member">
+                                <span>Total members</span>
+                                <p>78,990</p>
+                            </div>
+                            <div class="align-self-center">
+                                <a href="#" class="btn btn-primary me-3 ">View</a>
+                                <a href="#" class="btn btn-primary">Join</a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card com-desc-card col-sm-3 p-0">
-                <img src="../images/java.svg" class="card-img-topp-2" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title overflow-hidden">Java Community</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-
-                    <div class="d-flex justify-content-between">
-                        <div class="total-member">
-                            <span>Total members</span>
-                            <p>78,990</p>
-                        </div>
-                        <div class="align-self-center">
-                            <a href="#" class="btn btn-primary me-3 ">View</a>
-                            <a href="#" class="btn btn-primary">Join</a>
-                        </div>
-
-                    </div>
-                </div>
-            </div> <div class="card com-desc-card col-sm-3 p-0" >
-                <img src="../images/linux-svgrepo-com.svg" class="card-img-topp-2" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title overflow-hidden">Linux Community</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-
-                    <div class="d-flex justify-content-between">
-                        <div class="total-member">
-                            <span>Total members</span>
-                            <p>78,990</p>
-                        </div>
-                        <div class="align-self-center">
-                            <a href="#" class="btn btn-primary me-3 ">View</a>
-                            <a href="#" class="btn btn-primary">Join</a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
         </div>
+
 
     </section>
 
@@ -135,54 +155,207 @@
     <!-- Community Owner/Instructor - Section to highlight the community admin/instructor, ability to put instructor name, image, and bio, social media links, Youtube video link  -->
 
 
-    <section class="section-comm-owner">
-        <div class="owner-img">
-
-        </div>
-        <div class="about-owner">
-            <div class="about-owner-text">
-                <!-- name -->
-                <!-- about -->
+    <section class="section-comm-owner  p-5 ">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <p class="com-desc-header pb-4">Mentor of community</p>
             </div>
-            <div class="about-owner-soicial">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+            <div class="d-flex justify-content-between">
+                <div class="owner-img col-sm-4">
+                    <img src="../images/owner.png" class="img-fluid" alt="">
+                </div>
+                <div class="about-owner col-sm-6">
+                    <div class="about-owner-text">
+                        <p>Mr.Jubin Nautiyal</p>
+                        <!-- name -->
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius illo nam autem quos, rem illum
+                            sed voluptates tenetur aliquam nesciunt.</p>
+                        <!-- about -->
+                    </div>
+                    <div class="about-owner-soicial">
+                        <ul class="d-flex justify-content-between col-sm-5">
+                            <li><i class="bi bi-facebook"></i></li>
+                            <li><i class="bi bi-instagram"></i></li>
+                            <li><i class="bi bi-linkedin"></i></li>
+                            <li><i class="bi bi-youtube"></i></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-
     </section>
 
 
     <!-- Community Live Feed (optional)- Any section inside the Pensil platform can be embedded in a page. The landing page should have a place to preview a section of choice -->
 
 
-    <section class="section-live-feed">
-
+    <section class="section-live-feed p-5 ">
+        <div class="d-flex justify-content-center">
+            <p class="com-desc-header pb-4">Active Groups</p>
+        </div>
+        <div class="container mt-5 mb-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card-group p-3 mb-2">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="icon"> <i class="bx bxl-mailchimp"></i> </div>
+                                <div class="ms-2 c-details">
+                                    <h6 class="mb-0">Mailchimp</h6> <span>1 days ago</span>
+                                </div>
+                            </div>
+                            <div class="badge"> <span>Design</span> </div>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="heading">Senior Product<br>Designer-Singapore</h3>
+                            <div class="mt-5">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="mt-3"> <span class="text1">32 Applied <span class="text2">of 50
+                                            capacity</span></span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 mb-2">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="icon"> <i class="bx bxl-dribbble"></i> </div>
+                                <div class="ms-2 c-details">
+                                    <h6 class="mb-0">Dribbble</h6> <span>4 days ago</span>
+                                </div>
+                            </div>
+                            <div class="badge"> <span>Product</span> </div>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="heading">Junior Product<br>Designer-Singapore</h3>
+                            <div class="mt-5">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="mt-3"> <span class="text1">42 Applied <span class="text2">of 70
+                                            capacity</span></span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 mb-2">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="icon"> <i class="bx bxl-reddit"></i> </div>
+                                <div class="ms-2 c-details">
+                                    <h6 class="mb-0">Reddit</h6> <span>2 days ago</span>
+                                </div>
+                            </div>
+                            <div class="badge"> <span>Design</span> </div>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="heading">Software Architect <br>Java - USA</h3>
+                            <div class="mt-5">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="mt-3"> <span class="text1">52 Applied <span class="text2">of 100
+                                            capacity</span></span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
     <!-- Testimonial Section - Ability to put a text, image, name of a person, or company/college name in each testimonial. -->
+    <div class="d-flex justify-content-center p-5">
+        <p class="com-desc-header pb-4">What folks say</p>
+    </div>
 
+    <section class="section-testimonial p-5">
 
-    <section class="section-testimonial">
         <!-- use owl crousel -->
         <div class="testimonial-one">
-            <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
 
-            </div>
-            <div>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
+                        <div id="testimonial-slider" class="owl-carousel">
+
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="../images/owner.png" alt="">
+                                </div>
+                                <h3 class="title">Lorem ipsum dolor</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                                    non ante porttitor.</p>
+                                <div class="testimonial-content">
+                                    <div class="testimonial-profile">
+                                        <h3 class="name">williamson</h3>
+                                        <span class="post">Web Developer</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star-half-empty"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="../images/owner.png" alt="">
+                                </div>
+                                <h3 class="title">Lorem ipsum dolor</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                                    non ante porttitor.</p>
+                                <div class="testimonial-content">
+                                    <div class="testimonial-profile">
+                                        <h3 class="name">williamson</h3>
+                                        <span class="post">Web Developer</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star-half-empty"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="../images/owner.png" alt="">
+                                </div>
+                                <h3 class="title">Lorem ipsum dolor</h3>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                                    non ante porttitor.</p>
+                                <div class="testimonial-content">
+                                    <div class="testimonial-profile">
+                                        <h3 class="name">Kristina</h3>
+                                        <span class="post">Web Designer</span>
+                                    </div>
+                                    <ul class="rating">
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star"></li>
+                                        <li class="fa fa-star-half-empty"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
 
     </section>
 
@@ -190,10 +363,53 @@
     <!-- FAQ Section - List view, Question in bold and answer below it in normal font -->
 
 
-    <section class="section-faq">
+    <section class="section-faq p-5">
+        <div class="d-flex justify-content-center">
+            <p class="com-desc-header pb-4">Frequently asked questions</p>
+        </div>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="row">
+                    <!-- ***** FAQ Start ***** -->
+                    <div class="col-md-6 offset-md-3">
+                        <div class="faq-title text-center pb-3">
+                            <h2>FAQ</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-3">
+                        <div class="faq accordion" id="accordion">
+                            <div class="card">
+                                <div class="accordian-item">
+                                    <div class="card-header" id="faqHeading-1">
+                                        <div class="mb-0">
+                                            <h5 class="faq-title " data-bs-toggle="collapse"
+                                                data-bs-target="#faqCollapse-1" aria-expanded="true"
+                                                aria-controls="faqCollapse-1">
+                                                <span class="badge">1</span>What is Lorem Ipsum?
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1"
+                                      >
+                                        <div class="card-body">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </section>
-
+    </div>
+    <script>console.log("hi")</script>
 </body>
 
 </html>
