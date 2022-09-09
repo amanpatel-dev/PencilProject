@@ -11,21 +11,24 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/js/bootstrap.min.js">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <script src="script.js"></script>
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 
 <body>
     <!-- single Page with Community Logo, Name, Login Button on the header -->
 
     <div class="head-sec-one">
-
-
         <div class="container ">
             <header>
                 <nav>
@@ -36,8 +39,8 @@
                         </div>
 
                         <div>
-                            <li class="login-but1  btn btn-primary "> Login</li>
-                            <li class="login-but2  btn btn-dark "> Signup</li>
+                            <li class="button-type2"> Login</li>
+
                         </div>
                     </ul>
                 </nav>
@@ -54,18 +57,21 @@
                         <img src="../images/3531092.svg" alt="">
                     </div>
                     <div class="col-sm-12 col-md-7 hero-text pt-2">
-                        <div class="pt-2">
-                            <span class="hero-text1">One platform for all</span> <br>
-                            <span class="hero-text2 "> Your community needs</span>
+                        <div class="pt-2 ">
+                            <p class="hero-text">
+                                <span class="hero-text1"> One platform for all</span> <br>
+                                <span class="hero-text2 "> Your community </span>
+                                <br>
+                                <span class="hero-text2" id="hero-text-type"></span>
+                            </p>
                         </div>
                         <div class="pt-2 hero-text3">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, reiciendis odit laboriosam
-                                temporibus nemo voluptatum culpa deserunt autem amet ratione id eveniet officiis nobis
-                                maxime!
+                            <p>Here at our community ,we make sure that you don't feel confused to put your questions
+                                As well as to provide your opinion thats why we are the best
                             </p>
                         </div>
 
-                        <div class="hero-but  btn btn-primary pt-2 ">Get Started</div>
+                        <div class="button-type2 hero-btn pt-2 ">Get Started</div>
                     </div>
 
                 </div>
@@ -76,70 +82,93 @@
     <!-- Community Description - List items/highlights with brief pointers on what the community is about -->
 
 
-    <section class="section-com-desc  p-5">
+    <section class="section-com-desc pe-1 ps-1 pb-5 pt-5">
         <div class="container">
             <div class="d-flex justify-content-center">
                 <p class="com-desc-header pb-4">Explore Communities</p>
             </div>
             <div class="row justify-content-between">
-                <div class="card com-desc-card col-sm-12 col-md-3 p-0">
-                    <img src="../images/python.svg" class="card-img-topp-2" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title overflow-hidden">Python Community</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+
+                <div class=" com-desc-card col-sm-12 col-md-3 m-2 " data-aos="zoom-in" data-aos-duration="800">
+                    <div class="com-desc-img-div exp-img  pb-3">
+                        <img src="../images/c.svg" class=" img-fluid p-2" alt="...">
+                    </div>
+                    <div class="card-body p-2">
+                        <h5 class="card-title overflow-hidden pb-2">C++ Community</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum delectus
+                            vel alias quo? Eos, fuga!</p>
 
                         <div class="d-flex justify-content-between">
                             <div class="total-member">
-                                <span>Total members</span>
-                                <p>78,990</p>
+                                <div class="total-member-t1">Total members
+                                </div>
+                                <div class="total-member-t2 ">
+                                    <span>
+                                        <i class="fa fa-user ms-0  m-1" aria-hidden="true"></i>
+                                    </span>
+                                    <span> 98,780</span>
+                                </div>
                             </div>
                             <div class="align-self-center">
-                                <a href="#" class="btn btn-primary me-3 ">View</a>
-                                <a href="#" class="btn btn-primary">Join</a>
+                                <a href="#" class=" button-type1 me-3 ">View</a>
+                                <a href="#" class=" button-type1 ">Join</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" com-desc-card col-sm-12 col-md-3 m-2" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="exp-img  pb-3">
+                        <img src="../images/java.svg" class=" img-fluid p-2" alt="...">
+                    </div>
+
+                    <div class="card-body p-2">
+                        <h5 class="card-title overflow-hidden pb-2">Java Community</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum delectus
+                            vel alias quo? Eos, fuga!</p>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="total-member">
+                                <div class="total-member-t1">Total members
+                                </div>
+                                <div class="total-member-t2 ">
+                                    <span>
+                                        <i class="fa fa-user ms-0  m-1" aria-hidden="true"></i>
+                                    </span>
+                                    <span> 87,932</span>
+                                </div>
+                            </div>
+                            <div class="align-self-center">
+                                <a href="#" class=" button-type1 me-3 ">View</a>
+                                <a href="#" class=" button-type1 ">Join</a>
                             </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="card com-desc-card col-sm-12 col-md-3 p-0">
-                    <img src="../images/java.svg" class="card-img-topp-2" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title overflow-hidden">Java Community</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-
-                        <div class="d-flex justify-content-between">
-                            <div class="total-member">
-                                <span>Total members</span>
-                                <p>78,990</p>
-                            </div>
-                            <div class="align-self-center">
-                                <a href="#" class="btn btn-primary me-3 ">View</a>
-                                <a href="#" class="btn btn-primary">Join</a>
-                            </div>
-
-                        </div>
+                <div class=" com-desc-card col-sm-12 col-md-3 m-2" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="exp-img pb-3">
+                        <img src="../images/linux-svgrepo-com.svg" class=" img-fluid" alt="...">
                     </div>
-                </div>
-                <div class="card com-desc-card col-sm-12 col-md-3 p-0">
-                    <img src="../images/linux-svgrepo-com.svg" class="card-img-topp-2" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title overflow-hidden">Linux Community</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+
+                    <div class="card-body p-2">
+                        <h5 class="card-title overflow-hidden pb-2">Linux Community</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum delectus
+                            vel alias quo? Eos, fuga!</p>
 
                         <div class="d-flex justify-content-between">
                             <div class="total-member">
-                                <span>Total members</span>
-                                <p>78,990</p>
+                                <div class="total-member-t1">Total members
+                                </div>
+                                <div class="total-member-t2 ">
+                                    <span>
+                                        <i class="fa fa-user ms-0  m-1" aria-hidden="true"></i>
+                                    </span>
+                                    <span> 42,943</span>
+                                </div>
                             </div>
                             <div class="align-self-center">
-                                <a href="#" class="btn btn-primary me-3 ">View</a>
-                                <a href="#" class="btn btn-primary">Join</a>
+                                <a href="#" class=" button-type1 me-3 ">View</a>
+                                <a href="#" class=" button-type1 ">Join</a>
                             </div>
 
                         </div>
@@ -155,32 +184,49 @@
     <!-- Community Owner/Instructor - Section to highlight the community admin/instructor, ability to put instructor name, image, and bio, social media links, Youtube video link  -->
 
 
-    <section class="section-comm-owner  p-5 ">
+    <section class="section-comm-owner  pe-1 ps-1 pb-5 pt-5  ">
         <div class="container">
             <div class="d-flex justify-content-center">
                 <p class="com-desc-header pb-4">Mentor of community</p>
             </div>
-            <div class="d-flex justify-content-between">
-                <div class="owner-img col-sm-4">
-                    <img src="../images/owner.png" class="img-fluid" alt="">
+            <div class="row justify-content-between">
+                <div class="owner-img col-sm-12 col-md-4 mb-5">
+                    <img src="../images/owner.png" class="img-fluid " alt="">
                 </div>
-                <div class="about-owner col-sm-6">
+                <div class="about-owner col-sm-12 col-md-8">
                     <div class="about-owner-text">
-                        <p>Mr.Jubin Nautiyal</p>
-                        <!-- name -->
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius illo nam autem quos, rem illum
-                            sed voluptates tenetur aliquam nesciunt.</p>
-                        <!-- about -->
+                        <p class="owner-header-text1">Launch your site with the help of a pensil community Expert</p>
+                        <p class="owner-header-text2">
+                            We Have Created Codercommunity To Make Greast Programmers Community in the world, You Can
+                            Network, Collab, Join Hackthon, Find Open Source Projects Inside CoderCommunity</p>
                     </div>
-                    <div class="about-owner-soicial">
-                        <ul class="d-flex justify-content-between col-sm-5">
-                            <li><i class="bi bi-facebook"></i></li>
-                            <li><i class="bi bi-instagram"></i></li>
-                            <li><i class="bi bi-linkedin"></i></li>
-                            <li><i class="bi bi-youtube"></i></li>
-                            <li></li>
-                        </ul>
+                    <div class="owner-name row d-flex">
+                        <div class="col-md-5">
+                            <p class="owner-name-text1"> “Hitesh Chaoudhary”</p>
+                            <p class="owner-name-text2">The Founder of Codercommunity</p>
+                        </div>
+
+                        <div class="about-owner-soicial d-flex justify-content-evenly col-md-7 align-items-center">
+                            <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="700"
+                                data-aos-anchor-placement="top-bottom">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                            <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="700"
+                                data-aos-anchor-placement="top-bottom">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="700"
+                                data-aos-anchor-placement="top-bottom">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="700"
+                                data-aos-anchor-placement="top-bottom">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -190,164 +236,212 @@
     <!-- Community Live Feed (optional)- Any section inside the Pensil platform can be embedded in a page. The landing page should have a place to preview a section of choice -->
 
 
-    <section class="section-live-feed p-5 ">
+    <section class="section-live-feed  pe-1 ps-1 pb-5 pt-5">
         <div class="d-flex justify-content-center">
             <p class="com-desc-header pb-4">Active Groups</p>
         </div>
-        <div class="container mt-5 mb-3">
+        <div class="container mt-1 mb-5">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card card-group p-3 mb-2">
+                <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                    data-aos-delay="300">
+                    <div class="card card-group1 p-3 mb-2">
                         <div class="d-flex justify-content-between">
                             <div class="d-flex flex-row align-items-center">
-                                <div class="icon"> <i class="bx bxl-mailchimp"></i> </div>
+                                <div class="group-img"> <img src="../images/group/2group.jpg" alt=""></div>
                                 <div class="ms-2 c-details">
-                                    <h6 class="mb-0">Mailchimp</h6> <span>1 days ago</span>
+                                    <h6 class="mb-0">React-redux</h6> <span>5 min ago</span>
                                 </div>
                             </div>
-                            <div class="badge"> <span>Design</span> </div>
+                            <div class="badge "> <span>18K Members</span> </div>
                         </div>
                         <div class="mt-5">
-                            <h3 class="heading">Senior Product<br>Designer-Singapore</h3>
-                            <div class="mt-5">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="group-blog p-1">
+                                <h3 class="heading ">Best practices of react in 2022.</h3>
+                                <p class="heading-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                                    optio Lorem, ipsum dolor...</p>
+                            </div>
+
+                            <div class="mt-5 row ">
+                                <div class=" justify-content-between d-flex">
+
+
+                                    <div class="group-heart">
+                                        <span> <i class="fa-regular fa-heart pe-3"></i></span>
+                                        <span><i class="fa-regular fa-bookmark"></i></span>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <a href="#" class=" button-type1 me-3 ">View</a>
+                                        <a href="#" class=" button-type1 ">Join</a>
+                                    </div>
                                 </div>
-                                <div class="mt-3"> <span class="text1">32 Applied <span class="text2">of 50
-                                            capacity</span></span> </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card p-3 mb-2">
+                <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                    data-aos-delay="300">
+                    <div class="card card-group1 p-3 mb-2">
                         <div class="d-flex justify-content-between">
                             <div class="d-flex flex-row align-items-center">
-                                <div class="icon"> <i class="bx bxl-dribbble"></i> </div>
+                                <div class="group-img"> <img src="../images/group/4group.jpg" alt=""></div>
                                 <div class="ms-2 c-details">
-                                    <h6 class="mb-0">Dribbble</h6> <span>4 days ago</span>
+                                    <h6 class="mb-0">Vue-js-git</h6> <span>3 min ago</span>
                                 </div>
                             </div>
-                            <div class="badge"> <span>Product</span> </div>
+                            <div class="badge "> <span>54K Members</span> </div>
                         </div>
                         <div class="mt-5">
-                            <h3 class="heading">Junior Product<br>Designer-Singapore</h3>
-                            <div class="mt-5">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="group-blog p-1">
+                                <h3 class="heading ">Vue js - Some point you must know.</h3>
+                                <p class="heading-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                                    optio Lorem, ipsum dolor...</p>
+                            </div>
+
+                            <div class="mt-5 row ">
+                                <div class=" justify-content-between d-flex">
+
+
+                                    <div class="group-heart">
+                                        <span> <i class="fa-regular fa-heart pe-3"></i></span>
+                                        <span><i class="fa-regular fa-bookmark"></i></span>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <a href="#" class=" button-type1 me-3 ">View</a>
+                                        <a href="#" class=" button-type1 ">Join</a>
+                                    </div>
                                 </div>
-                                <div class="mt-3"> <span class="text1">42 Applied <span class="text2">of 70
-                                            capacity</span></span> </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card p-3 mb-2">
+                <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                    data-aos-delay="300">
+                    <div class="card card-group1 p-3 mb-2">
                         <div class="d-flex justify-content-between">
                             <div class="d-flex flex-row align-items-center">
-                                <div class="icon"> <i class="bx bxl-reddit"></i> </div>
+                                <div class="group-img"><img src="../images/group/3group.jpg" alt=""> </div>
                                 <div class="ms-2 c-details">
-                                    <h6 class="mb-0">Reddit</h6> <span>2 days ago</span>
+                                    <h6 class="mb-0">Git-Github</h6> <span>12 min ago</span>
                                 </div>
                             </div>
-                            <div class="badge"> <span>Design</span> </div>
+                            <div class="badge "> <span>341K Members</span> </div>
                         </div>
                         <div class="mt-5">
-                            <h3 class="heading">Software Architect <br>Java - USA</h3>
-                            <div class="mt-5">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="group-blog p-1">
+                                <h3 class="heading ">Github removed these Features -A list.</h3>
+                                <p class="heading-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                                    optio Lorem, ipsum dolor...</p>
+                            </div>
+
+                            <div class="mt-5 row ">
+                                <div class=" justify-content-between d-flex">
+
+
+                                    <div class="group-heart">
+                                        <span> <i class="fa-regular fa-heart pe-3"></i></span>
+                                        <span><i class="fa-regular fa-bookmark"></i></span>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <a href="#" class=" button-type1 me-3 ">View</a>
+                                        <a href="#" class=" button-type1 ">Join</a>
+                                    </div>
                                 </div>
-                                <div class="mt-3"> <span class="text1">52 Applied <span class="text2">of 100
-                                            capacity</span></span> </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </section>
 
 
     <!-- Testimonial Section - Ability to put a text, image, name of a person, or company/college name in each testimonial. -->
-    <div class="d-flex justify-content-center p-5">
+    <div class="d-flex justify-content-center p-5 pb-0 testimonial-header">
         <p class="com-desc-header pb-4">What folks say</p>
     </div>
+    <section class="testimonial-section d-flex align-items-center  pe-1 ps-1 pb-5 pt-5">
 
-    <section class="section-testimonial p-5">
 
-        <!-- use owl crousel -->
-        <div class="testimonial-one">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
+        <div class="container">
 
-                        <div id="testimonial-slider" class="owl-carousel">
-
-                            <div class="testimonial">
-                                <div class="pic">
-                                    <img src="../images/owner.png" alt="">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="testimonial-slider" class="owl-carousel">
+                        <div class="testimonial">
+                            <div class="content">
+                                <div class="testimonial-pic">
+                                    <img src="../images/group/3group.jpg" alt="">
                                 </div>
-                                <h3 class="title">Lorem ipsum dolor</h3>
-                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                                    non ante porttitor.</p>
-                                <div class="testimonial-content">
-                                    <div class="testimonial-profile">
-                                        <h3 class="name">williamson</h3>
-                                        <span class="post">Web Developer</span>
-                                    </div>
-                                    <ul class="rating">
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star-half-empty"></li>
+                                <div class="testimonial-prof">
+                                    <h3 class="testimonial-title">Williamson</h3>
+                                    <span class="testimonial-post">Web developer</span>
+                                    <p class="description">This is just an awsome community with good people and mentors,Five Star</p>
+                                    <ul class="social-links">
+                                        <li><a href="#" class="fab fa-twitter"></a></li>
+                                        <li><a href="#" class="fab fa-facebook"></a></li>
+                                        <li><a href="#" class="fab fa-pinterest"></a></li>
+                                        <li><a href="#" class="fab fa-dribbble"></a></li>
+                                        <li><a href="#" class="fab fa-instagram"></a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="testimonial">
-                                <div class="pic">
-                                    <img src="../images/owner.png" alt="">
+                        </div>
+
+                        <div class="testimonial">
+                            <div class="content">
+                                <div class="testimonial-pic">
+                                    <img src="../images/group/2group.jpg" alt="">
                                 </div>
-                                <h3 class="title">Lorem ipsum dolor</h3>
-                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                                    non ante porttitor.</p>
-                                <div class="testimonial-content">
-                                    <div class="testimonial-profile">
-                                        <h3 class="name">williamson</h3>
-                                        <span class="post">Web Developer</span>
-                                    </div>
-                                    <ul class="rating">
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star-half-empty"></li>
+                                <div class="testimonial-prof">
+                                    <h3 class="testimonial-title">kristiana</h3>
+                                    <span class="testimonial-post">Web developer</span>
+                                    <p class="description">I found out this is one of the best community available on the internet ,must try.</p>
+                                    <ul class="social-links">
+                                        <li><a href="#" class="fab fa-twitter"></a></li>
+                                        <li><a href="#" class="fab fa-facebook"></a></li>
+                                        <li><a href="#" class="fab fa-pinterest"></a></li>
+                                        <li><a href="#" class="fab fa-dribbble"></a></li>
+                                        <li><a href="#" class="fab fa-instagram"></a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="testimonial">
-                                <div class="pic">
-                                    <img src="../images/owner.png" alt="">
+                        </div>
+                        <div class="testimonial">
+                            <div class="content">
+                                <div class="testimonial-pic">
+                                    <img src="../images/group/1group.jpg" alt="">
                                 </div>
-                                <h3 class="title">Lorem ipsum dolor</h3>
-                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                                    non ante porttitor.</p>
-                                <div class="testimonial-content">
-                                    <div class="testimonial-profile">
-                                        <h3 class="name">Kristina</h3>
-                                        <span class="post">Web Designer</span>
-                                    </div>
-                                    <ul class="rating">
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star-half-empty"></li>
+                                <div class="testimonial-prof">
+                                    <h3 class="testimonial-title">kristiana</h3>
+                                    <span class="testimonial-post">Web developer</span>
+                                    <p class="description">This is great community ,here i found out amny new connections & friends .a must try website </p>
+                                    <ul class="social-links">
+                                        <li><a href="#" class="fab fa-twitter"></a></li>
+                                        <li><a href="#" class="fab fa-facebook"></a></li>
+                                        <li><a href="#" class="fab fa-pinterest"></a></li>
+                                        <li><a href="#" class="fab fa-dribbble"></a></li>
+                                        <li><a href="#" class="fab fa-instagram"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="content">
+                                <div class="testimonial-pic">
+                                    <img src="../images/group/4group.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="testimonial-prof">
+                                    <h3 class="testimonial-title">williamson</h3>
+                                    <span class="testimonial-post">web developer</span>
+                                    <p class="description">Here the mentors are super friendly and i made ne coder friends they are so helpful</p>
+                                    <ul class="social-links">
+                                        <li><a href="#" class="fab fa-twitter"></a></li>
+                                        <li><a href="#" class="fab fa-facebook"></a></li>
+                                        <li><a href="#" class="fab fa-pinterest"></a></li>
+                                        <li><a href="#" class="fab fa-dribbble"></a></li>
+                                        <li><a href="#" class="fab fa-instagram"></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -356,28 +450,21 @@
                 </div>
             </div>
         </div>
-
     </section>
-
 
     <!-- FAQ Section - List view, Question in bold and answer below it in normal font -->
 
 
-    <section class="section-faq p-5">
+    <section class="section-faq pe-1 ps-1 pb-5 pt-5">
         <div class="d-flex justify-content-center">
             <p class="com-desc-header pb-4">Frequently asked questions</p>
         </div>
 
         <section class="faq-section">
             <div class="container">
-                <div class="row">
-                    <!-- ***** FAQ Start ***** -->
-                    <div class="col-md-6 offset-md-3">
-                        <div class="faq-title text-center pb-3">
-                            <h2>FAQ</h2>
-                        </div>
-                    </div>
-                    <div class="col-md-6 offset-md-3">
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="col-md-10  ">
                         <div class="faq accordion" id="accordion">
                             <div class="card">
                                 <div class="accordian-item">
@@ -386,12 +473,74 @@
                                             <h5 class="faq-title " data-bs-toggle="collapse"
                                                 data-bs-target="#faqCollapse-1" aria-expanded="true"
                                                 aria-controls="faqCollapse-1">
-                                                <span class="badge">1</span>What is Lorem Ipsum?
+                                                <span class="badge"></span>What is this community thing?
                                             </h5>
                                         </div>
                                     </div>
-                                    <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1"
-                                      >
+                                    <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1">
+                                        <div class="card-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, repellat quidem! Minima ea excepturi consequuntur mollitia pariatur, accusantium animi enim eius qui? Magnam. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="faq accordion" id="accordion">
+                            <div class="card">
+                                <div class="accordian-item">
+                                    <div class="card-header" id="faqHeading-2">
+                                        <div class="mb-0">
+                                            <h5 class="faq-title " data-bs-toggle="collapse"
+                                                data-bs-target="#faqCollapse-2" aria-expanded="true"
+                                                aria-controls="faqCollapse-2">
+                                                <span class="badge"></span>How to be the part of it?
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2">
+                                        <div class="card-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus deleniti dolore temporibus, placeat et, voluptates dignissimos aut earum reprehenderit recusandae distinctio! Temporibus, earum?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="faq accordion" id="accordion">
+                            <div class="card">
+                                <div class="accordian-item">
+                                    <div class="card-header" id="faqHeading-3">
+                                        <div class="mb-0">
+                                            <h5 class="faq-title " data-bs-toggle="collapse"
+                                                data-bs-target="#faqCollapse-3" aria-expanded="true"
+                                                aria-controls="faqCollapse-3">
+                                                <span class="badge"></span>Why to join group?
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3">
+                                        <div class="card-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quae est accusamus doloribus dolores culpa, alias molestias ratione quasi amet repellendus reprehenderit aperiam? </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="faq accordion" id="accordion">
+                            <div class="card">
+                                <div class="accordian-item">
+                                    <div class="card-header" id="faqHeading-4">
+                                        <div class="mb-0">
+                                            <h5 class="faq-title " data-bs-toggle="collapse"
+                                                data-bs-target="#faqCollapse-4" aria-expanded="true"
+                                                aria-controls="faqCollapse-4">
+                                                <span class="badge"></span>How to make group?
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4">
                                         <div class="card-body">
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                                                 industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -401,6 +550,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -408,8 +558,52 @@
         </section>
 
     </section>
+    <section>
+
+
+        <div class=" mt-5">
+
+            <footer class=" text-center text-white">
+                <div class="footer-div1">
+
+
+                    <div class="container p-4 pb-0 ">
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-facebook-f f-icon"></i></a>
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-twitter f-icon"></i></a>
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-google f-icon"></i></a>
+
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-instagram f-icon"></i></a>
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-linkedin-in f-icon"></i></a>
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fab fa-github f-icon"></i></a>
+
+
+                    </div>
+                </div>
+                <div class="text-center p-3 footer-div2">
+                    © 2022 Copyright:
+                    <a class="text-white" href="https://pensil.in/">Pensil</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+
+        </div>
+
+    </section>
     </div>
-    <script>console.log("hi")</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../plugins/coretypewriter/core.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
